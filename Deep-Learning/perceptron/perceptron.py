@@ -18,6 +18,12 @@ def OR(x1, x2):
     
     return perceptron(x1, x2, w1, w2, theta)
 
+def XOR(x1, x2):
+    s1 = NAND(x1, x2)
+    s2 = OR(x1, x2)
+    
+    return AND(s1, s2)
+
 def main():
     print("AND")
     print(f"0 and 0: {AND(0, 0)}")
