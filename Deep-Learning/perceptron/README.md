@@ -6,7 +6,8 @@
 * 下圖為接收兩個輸入訊號的 Perceptron 模型，$x_1$、$x_2$ 為輸入訊號，$y$ 為輸出訊號，$w_1$、$w_2$ 為權重 (w 是 weight 的縮寫)，當今天輸入的訊號被傳送到 Perceptron (神經元) 時，會分別乘上權重 (可以想像成這個訊號的對判斷的影響力 or 重要性)，神經元會將所有輸入訊號的加權總，並檢查此總和是否大於某個閥值 (threshold)，若大於閥值，則輸出 1，否則輸出 0。
   > ![Perceptron-with-two-inputs-and-weights]()
 * Perceptron 的運作原理就只有上述而已，也因此其公式可以表示入下:
-  > $$y = \begin{cases} 0 & \text{if } w_1x_1 + w_2x_2 \leq \theta \\ 1 & \text{if } w_1x_1 + w_2x_2 > \theta \end{cases}$$
+  > $y = \begin{cases} 0 & \text{if } w_1x_1 + w_2x_2 \leq \theta \\ 1 & \text{if } w_1x_1 + w_2x_2 > \theta \end{cases}$
+  > 
   > 其中，$\theta$ 為閥值 (threshold)，當 $w_1x_1 + w_2x_2$ 大於 $\theta$ 時，輸出 1，否則輸出 0。
 * Perceptron 的輸入訊號可以是任何數值，但輸出訊號只有 0 或 1，因此 Perceptron 可以被視為一個二元分類器 (binary classifier)。
 
