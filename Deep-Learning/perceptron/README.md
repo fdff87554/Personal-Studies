@@ -66,3 +66,10 @@
   > ```
   > 其中 s1 跟 s2 就是第一層的 Perceptron 輸出，而 y 就是第二層的 Perceptron 輸出。
 * 到這個時候，我們才算是真正將 Neural Network 的結構正式推出，因為他總算能完成一台電腦應該要能完成的邏輯概念了。
+
+## From Perceptron to Neural Network / 從感知器到神經網路
+* 在前面介紹 Neural Network (神經網絡) 的時候，有提到其是由一個又一個的 Neuron (神經元) 所組成，也提到每個神經元在接收 input 之後，會經過一個簡單的計算並且判斷是否有超過某個 threshold，如果有超過 threshold 就會輸出某一種結果，反之另一種結果，而這個部分就是神經元的輸出。
+* 我們把神經替換成 Perceptron 去做思考，就可以發現其實 Perceptron 真的就是其中一個神經元，我們接收了兩個訊號的輸入 $(x_1, x_2)$ 並且加上了權重 $(w_1, w_2)$，再加上偏差 $b$，最後再經過一個簡單的計算，並且判斷閥值，這邊的閥值其實可以視為經過一個簡單的函數判斷，這個函數由於是專門用來激發結果的，因此我們稱之為 Activation Function (激勵函數)。因此原本的 Perceptron Algorithm 可以改寫成下面的形式:
+  > $y = h(b + w_1x_1 + w_2x_2)$
+  > 其中 h 是 Activation Function。
+* 關於 Weight, Bias, Activation Function 的說明，會寫在
